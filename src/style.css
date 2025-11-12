@@ -1,0 +1,22 @@
+.header-1 {
+    background-color: blue;
+    text-align: end;
+    button {
+        background-color: blue;
+        color: white
+    }
+}
+
+.header-2 {
+    background-color: orange;
+    text-align: center;
+    button {
+        background-color: orange;
+        color: white
+    }
+}
+
+.header-3 img {
+    max-width: 100%;
+    height: auto;
+}
