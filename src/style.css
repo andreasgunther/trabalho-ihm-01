@@ -1,11 +1,42 @@
 * {
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+.header-1 {
+    background-color: blue;
+    text-align: end;
+    padding: 10px;
+    a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+    }
+    button {
+        background-color: blue;
+        border: none;
+        cursor: pointer;
+        img {
+            width: 20px;
+            height: 12px;
+        }
+    }
+}
+
+.header-2 {
+    background-color: orange;
+    text-align: center;
+    padding: 40px;
+}
+
+.header-3 img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
     background-color: rgb(0, 0, 125);
     h1 {
         margin-top: 25px;
@@ -16,60 +47,35 @@ body {
             color: orange;
         }
     }
-}
 
-.main {
-    display: flex;
-    justify-content: center;
-}
-
-.header-1 {
-    background-color: blue;
-    text-align: end;
-    button {
-        background-color: blue;
-        color: white
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        .card-1 {
+            margin: 50px;
+            background-color: orange;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            h1 {
+                font-size: 25px;
+                margin-bottom: 10px;
+                color: #ffffff
+            }
+            img {
+                width: 60px;
+            }
+            h2 {
+                padding-bottom: 10px;
+            }
+            button {
+                border-radius: 40px;
+                width: 150px;
+                height: 40px;
+            }
+        }
     }
 }
 
-.header-2 {
-    background-color: orange;
-    text-align: center;
-    button {
-        background-color: orange;
-        color: white
-    }
-}
-
-.header-3 img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-
-.card-1 {
-    margin: 50px;
-    background-color: orange;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    h1 {
-        font-size: 25px;
-        margin-bottom: 10px;
-        color: #ffffff
-    }
-    img {
-        width: 60px;
-    }
-    h2 {
-        padding-bottom: 10px;
-    }
-    button {
-        border-radius: 40px;
-        width: 150px;
-        height: 40px;
-    }
-}
