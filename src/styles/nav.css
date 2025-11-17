@@ -1,5 +1,9 @@
+.nav{
+    font-family: var(--fonte);
+}
+
 .nav-1 {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-2);
     text-align: right;
     padding: 5px;
     padding-right: 40px;
@@ -19,9 +23,12 @@
 }
 
 .nav-2 {
-    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
     text-align: center;
-    padding: 30px;
+    padding: 1rem;
 }
 
 .nav-2 img {
