@@ -4,6 +4,7 @@
     height: 7.25rem;
     display: flex;
     align-items: center;
+    padding-left: 10rem;
 }
 
 .header__nav{
@@ -16,18 +17,18 @@
     padding: 1rem;
     width: 100%;
     height: 6.25rem;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .header__lista{
     text-decoration: none;
     color: var( --tertiary-color);
-    font-size:1.25rem;
+    font-size:1.7rem;
     font-weight: bold;
 }
 
 .header__img-logo{
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
