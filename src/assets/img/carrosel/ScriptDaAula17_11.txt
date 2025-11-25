@@ -1,0 +1,53 @@
+
+-- criação de tabelas
+CREATE TABLE departamentos(
+  codigo INT AUTO_INCREMENT,
+  descricao VARCHAR(200),
+  CONSTRAINT pk_departamentos PRIMARY KEY (codigo)
+);
+
+
+DESCRIBE departamentos;
+
+CREATE TABLE funcionarios(
+  codigo INT AUTO_INCREMENT,
+  nome VARCHAR(100),
+  rua VARCHAR(100),
+  numero INT,
+  telefone VARCHAR(20),
+  cod_departamento INT,
+  CONSTRAINT pk_funcionarios PRIMARY KEY (codigo),
+  CONSTRAINT fk_departamentos FOREIGN KEY (cod_departamento) REFERENCES departamentos (codigo)
+);
+
+DESCRIBE funcionarios;
+
+CREATE TABLE dependentes(
+  codigo INT AUTO_INCREMENT,
+  nome VARCHAR(100),
+  data_nascimento DATE,
+  cod_funcionarios INT,
+  CONSTRAINT pk_dependentes PRIMARY KEY (codigo),
+  CONSTRAINT fk_funcionarios FOREIGN KEY (cod_funcionarios) REFERENCES funcionarios (codigo)
+);
+
+DESCRIBE dependentes;
+
+-- inserts
+INSERT INTO departamentos VALUES (5, "Recursos Humanos");
+INSERT INTO departamentos VALUES (10, "Vendas");
+INSERT INTO departamentos (descricao) VALUES ("Vendas");
+
+
+INSERT INTO funcionarios (nome, rua, numero, telefone, cod_departamento) VALUES ("Miqueias", "Eunice", 2, "99999-9999", 5);
+
+SELECT * FROM funcionarios;
+
+
+INSERT INTO dependentes(nome, data_nascimento, cod_funcionarios) VALUES ("Moana", "2015-05-15", 1);
+
+SELECT * FROM dependentes;
+
+
+
+

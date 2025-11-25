@@ -19,7 +19,7 @@
     padding: 3rem 3.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
     margin-left: 5rem;
 }
 
@@ -35,12 +35,12 @@
     margin-top: 1rem;
     font-family: var(--fonte);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .footer__img-lista{
-    width: 10rem;
-    height: 3.5rem;
+    width: 15.375rem;
+    height: 5.5rem;
     margin-left: -0.40rem;
 }
 
@@ -58,7 +58,7 @@
 .footer__titulo{
     font-family: var(--fonte);
     font-weight: 700;
-    font-size:1.5rem;
+    font-size:2rem;
 }
 .footer__contato-item{
     display: flex;
@@ -67,21 +67,21 @@
 }
 
 .footer__contato-item img{
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .footer__contato-item span{
     margin-left: 1rem;
     font-family: var(--fonte);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
 .footer__imagem img{
-    width: 14rem;
-    height: 15.5em;
+    width: 18.625rem;
+    height: 20em;
     margin-right: 8rem;
 
 }
@@ -96,7 +96,7 @@
     align-items: center;
     background-color: var(--secondary-color);
     font-family: var(--fonte);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     padding: 1rem 0;     
     padding-left: 3.5rem;
@@ -135,6 +135,8 @@
 
     .footer__imagem {
         display: none; 
+        width: 100%;
+        max-width: 75rem;
     }
 
     .footer__direitos {

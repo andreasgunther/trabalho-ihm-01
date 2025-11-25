@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrossel Simples</title>
+
+    <style>
+.carrossel {
+    position: relative;
+    width: 80.125rem;
+    height: 43.75rem;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* efeito suave */
+    object-fit: cover;
+}
+
+.slide.ativo {
+    opacity: 1; 
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="carrossel" id="carrosel">
+        <div class="slides">
+            <!-- Suas imagens -->
+            <img src="/src/assets/img/carrosel/Imagem 1.png" class="slide ativo" alt="Slide 1">
+            <img src="/src/assets/img/carrosel/Imagem 2.png" class="slide" alt="Slide 2">
+            <img src="/src/assets/img/carrosel/Imagem 3.png" class="slide" alt="Slide 3">
+        </div>
+
+        <button class="btn prev" onclick="voltar()">&#10094;</button>
+        <button class="btn next" onclick="avancar()">&#10095;</button>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function mostrarSlide(n) {
+            slides.forEach(slide => slide.classList.remove("ativo"));
+            slides[n].classList.add("ativo");
+        }
+
+        function avancar() {
+            index = (index + 1) % slides.length;
+            mostrarSlide(index);
+        }
+
+        function voltar() {
+            index = (index - 1 + slides.length) % slides.length;
+            mostrarSlide(index);
+        }
+
+        // 🚀 Auto play: troca de slide a cada 8 segundos
+        setInterval(avancar, 3000);
+    </script>
+
+</body>
+</html>

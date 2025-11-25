@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    gap: 10rem;
+    gap: 9rem;
     
 }
 
@@ -116,3 +116,5 @@
     filter: brightness(0.95);
     cursor: pointer;
 }
+
+
