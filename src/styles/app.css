@@ -1,6 +1,5 @@
 
 body {
-    background-color: #282828;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,7 +54,7 @@ body {
     }
 
     .app__column-1 img {
-        width: 80%;
+        width: 90%;
         height: auto;
     }
 

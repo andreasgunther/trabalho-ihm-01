@@ -7,6 +7,8 @@
     gap: 6rem;
     font-family: var(--fonte);
     color: var(--tertiary-color);
+    padding-bottom: 10rem;
+    padding-top: 5rem;
 }
 
 .planos__titulo{
