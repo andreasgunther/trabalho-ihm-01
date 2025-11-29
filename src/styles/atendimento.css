@@ -17,6 +17,8 @@ body {
     border-color: white;
     border-style: solid;
     flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .atendimento__column1 {
@@ -57,7 +59,7 @@ body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .atendimento__column2 p {
