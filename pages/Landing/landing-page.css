@@ -182,7 +182,7 @@ body {
 .section_six {
   display: flex;
   align-items: center;
-  padding: 10rem;
+  padding: 6rem;
   font-family: var(--fonte);
   flex-direction: column;
   gap: 10rem;
@@ -297,13 +297,66 @@ body {
 /*    Vagas de Emprego e Estagio    */
 /* ================================ */
 
-.section_seven {
+.section__seven {
+  padding: 10rem 10rem;
+  font-family: var(--fonte);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5rem;
+}
+
+.content4__titulo{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--tertiary-color);
+}
+
+.content4__titulo span{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.content4{
   display: flex;
   align-items: center;
-  padding: 10rem;
-  font-family: var(--fonte);
+  justify-content: center;
+  gap: 5rem;
+}
+
+.content4__base{
+  display:flex;
   flex-direction: column;
-  gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  gap:2.5rem;
+  width: 47.188rem;
+  height:40.813rem;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border-radius:1%;
+  padding: 3rem;
+}
+
+.content4__base--azul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2.5rem;
+  width: 47.188rem;
+  height:40.813rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color-2);
+  border-radius:1%;
+  padding: 3rem;
+}
+
+.content4__tit{
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .content4__contatos {
@@ -312,14 +365,48 @@ body {
   gap: 8px;
 }
 
+.content4__texto {
+  width: 45rem;
+  text-align: justify; /* justificar o texto */
+  line-height: 1.3;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.content4__contatos{
+  display: flex;
+  gap:1rem;
+}
+
 .content4__bnt {
-  display: inline-flex;
+  width: 28.313rem;
+  height: 4.875rem;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 20px;
-  border-radius: 999px;
-  background: #fff;
+  justify-content: center;
+  font-size: 2.25rem;
+  gap:1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 62.438rem;
+  background:var(--tertiary-color);
   text-decoration: none;
-  color: #f7931e;
-  font-weight: 600;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+
+.content4__bnt--azul {
+  width: 28.313rem;
+  height: 4.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+  gap:1rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 62.438rem;
+  background:var(--primary-color-2);
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-weight: 700;
 }
