@@ -1,0 +1,150 @@
+
+body {
+    font-family: var(--fonte);
+}
+
+.atendimento {
+    display: flex;
+    background-color: black;
+    width: 90rem;
+    height: 27rem;
+    justify-self: center;
+    justify-content: space-between;
+    border-radius: 4rem;
+    align-items: center;
+    gap: 3rem;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.atendimento__column1 {
+    padding-left: 4rem;
+}
+
+.atendimento__column1 span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.atendimento__column1 p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    max-width: 25rem;
+    word-wrap: break-word;
+}
+
+.atendimento__column2 img {
+    vertical-align: middle;
+}
+
+.atendimento__column2 h3 {
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    width: 16rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 1.5rem;
+}
+
+.atendimento__column2 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.atendimento__column2 p {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.atendimento__column3 {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 1480px) {
+    .atendimento {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        border-radius: 0;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+        padding: 4rem;
+    }
+
+    .atendimento__column3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .atendimento {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    
+    .atendimento__column2 {
+        background-color: var(--primary-color);
+        border-radius: 4rem;
+        padding: 2rem 4rem;
+    }
+
+    .atendimento__column2 h3 {
+        background-color: var(--secondary-color);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .atendimento {
+        padding: 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .atendimento__column1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .atendimento__column2 {
+        width: 95%;
+    }
+
+    .atendimento__column2 img {
+        display: none;
+    }
+
+    .atendimento__column2 h2 {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .atendimento__column2 h3 {
+        font-size: 1.2rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        width: 14rem;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .atendimento__column2 p {
+        padding-bottom: 0.5rem;
+    }
+}

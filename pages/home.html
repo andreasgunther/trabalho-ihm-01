@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>He-Net</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/multiple/home.css">
+    <link rel="stylesheet" href="/src/styles/nav.css">
+    <link rel="stylesheet" href="/src/styles/planoswifi.css">
+    <link rel="stylesheet" href="/src/styles/atendimento.css">
+    <link rel="stylesheet" href="/src/styles/app.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
+</head>
+<body>
+    <header><div id="nav"></div></header>
+    <div id="planoswifi"></div>
+    <div id="atendimento"></div>
+    <div id="app"></div>
+    <footer><div id="footer"></div></footer>
+    <script src="../src/scripts/carregarComponentes.js"></script>
+    <script>
+        carregarComponente("#nav", "/components/nav.html")
+        carregarComponente("#planoswifi", "/components/planoswifi.html")
+        carregarComponente("#atendimento", "/components/atendimento.html")
+        carregarComponente("#app", "/components/app.html")
+        carregarComponente("#footer", "/components/footer.html")
+    </script>
+</body>
+</html>

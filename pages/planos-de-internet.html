@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>He-Net</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/multiple/planos-de-internet.css">
+    <link rel="stylesheet" href="/src/styles/nav.css">
+    <link rel="stylesheet" href="/src/styles/planoswifi.css">
+    <link rel="stylesheet" href="/src/styles/atendimento.css">
+    <link rel="stylesheet" href="/src/styles/app.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
+</head>
+<body>
+    <header><div id="nav"></div></header>
+    <div id="planoswifi2"></div>
+    <div class="banner-taylor">
+        <img src="/src/assets/img/multiple/planos-de-internet/banner-taylor.png" alt="Banner Taylor">
+    </div>
+    <section class="container">
+        <div class="container__description">
+            <h2>Qual é o plano <span>mais indicado para você</span></h2>
+            <img src="/src/assets/img/multiple/planos-de-internet/brasil.png" alt="[Sirueta do Brasil]">
+        </div>
+            <div class="container__cards">
+                <div class="cards__card-1">
+                    <h3>50mb e 100mb</h3>
+                    <p>Indicados para uso uso com poucos dispositivos navegação na internet e streaming até resolução HD e profissionais autônomos.</p>
+                </div>
+                <div class="cards__card-2">
+                    <h3>100mb e 200mb</h3>
+                    <p>No uso residencial indicado para para famílias e usuários que gostam de assistir serviços de streaming com melhor qualidade. Ideal para pequenos escritórios com até 5 pessoas.</p>
+                </div>
+                <div class="cards__card-3">
+                    <h3>Super velocidade de 500mb</h3>
+                    <p>No uso residencial ideal para famílias e residências grandes, para quem busca maior velocidade em download, alta qualidade em serviços de streaming em resoluções 4k+ Ideal também para pequenos escritórios com até 8 pessoas.</p>
+                </div>
+            </div>
+    </section>
+    <div id="atendimento"></div>
+    <div id="app"></div>
+    <footer><div id="footer"></div></footer>
+    <script src="../src/scripts/carregarComponentes.js"></script>
+    <script>
+        carregarComponente("#nav", "/components/nav.html")
+        carregarComponente("#planoswifi2", "/components/planoswifi2.html")
+        carregarComponente("#atendimento", "/components/atendimento.html")
+        carregarComponente("#app", "/components/app.html")
+        carregarComponente("#footer", "/components/footer.html")
+    </script>
+</body>
+</html>
